@@ -50,7 +50,6 @@ git clone https://github.com/thpereira1/gf-patterns.git
 cd gf-patterns
 chmod +x install.sh && ./install.sh
 cd ..
-rm -r gf-patterns
 
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 mv /root/go/bin/katana /usr/bin/
