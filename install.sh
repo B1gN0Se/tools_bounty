@@ -69,4 +69,6 @@ mv /root/go/bin/kxss /usr/bin/
 go install -v github.com/LukaSikic/subzy@latest
 mv /root/go/bin/subzy /usr/bin/
 
-pip install git+https://github.com/xnl-h4ck3r/knoxnl.git
+apt install pipx -y
+pipx install git+https://github.com/xnl-h4ck3r/knoxnl.git
+pipx ensurepath
