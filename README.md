@@ -1,8 +1,8 @@
 ## tools_bounty  
 
-Tested on **Kali Linux**
+Tested on **Kali Linux (Cloud)**
 
-A basic shell script that installs the tools I use most during my tests. (Cloud)
+A basic shell script that installs the tools I use most during my tests.
 
 **Steps:**  
 
