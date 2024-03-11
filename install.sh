@@ -67,3 +67,6 @@ mv /root/go/bin/subzy /usr/bin/
 
 pipx install git+https://github.com/xnl-h4ck3r/knoxnl.git
 pipx ensurepath
+
+go install github.com/ffuf/ffuf/v2@latest
+mv /root/go/bin/ffuf /usr/bin/
