@@ -47,8 +47,8 @@ cd gf-patterns
 chmod +x install.sh && ./install.sh
 cd ..
 
-go install github.com/projectdiscovery/katana/cmd/katana@latest
-mv /root/go/bin/katana /usr/bin/
+go install github.com/hakluke/hakrawler@latest
+mv /root/go/bin/hakrawler /usr/bin/
 
 pip3 install uro
 
