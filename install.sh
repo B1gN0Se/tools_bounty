@@ -70,3 +70,6 @@ pipx ensurepath
 
 go install github.com/ffuf/ffuf/v2@latest
 mv /root/go/bin/ffuf /usr/bin/
+
+go install github.com/xhzeem/toxicache@latest
+mv /root/go/bin/toxicache /usr/bin/
