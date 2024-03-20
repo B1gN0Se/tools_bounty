@@ -73,3 +73,10 @@ mv /root/go/bin/ffuf /usr/bin/
 
 go install github.com/xhzeem/toxicache@latest
 mv /root/go/bin/toxicache /usr/bin/
+
+git clone https://github.com/devanshbatham/paramspider
+cd paramspider
+pip install .
+
+go install github.com/KathanP19/Gxss@latest
+mv /root/go/bin/Gxss /usr/bin/
