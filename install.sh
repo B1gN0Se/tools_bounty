@@ -80,3 +80,6 @@ pip install .
 
 go install github.com/KathanP19/Gxss@latest
 mv /root/go/bin/Gxss /usr/bin/
+
+go install github.com/bitquark/shortscan/cmd/shortscan@latest
+mv /root/go/bin/shortscan /usr/bin/
