@@ -83,3 +83,9 @@ mv /root/go/bin/Gxss /usr/bin/
 
 go install github.com/bitquark/shortscan/cmd/shortscan@latest
 mv /root/go/bin/shortscan /usr/bin/
+
+pip install aiohttp tqdm
+git clone https://github.com/devanshbatham/openredirex
+cd openredirex
+sudo chmod +x setup.sh
+./setup.sh
