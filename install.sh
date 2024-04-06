@@ -87,9 +87,13 @@ mv /root/go/bin/shortscan /usr/bin/
 git clone https://github.com/swisskyrepo/SSRFmap
 cd SSRFmap
 pip3 install -r requirements.txt
+cd ..
+rm -r SSRFmap
 
 pip install aiohttp tqdm
 git clone https://github.com/devanshbatham/openredirex
 cd openredirex
 sudo chmod +x setup.sh
 ./setup.sh
+cd ..
+rm -r openredirex
