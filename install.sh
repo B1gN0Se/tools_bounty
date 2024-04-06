@@ -88,7 +88,6 @@ git clone https://github.com/swisskyrepo/SSRFmap
 cd SSRFmap
 pip3 install -r requirements.txt
 cd ..
-rm -r SSRFmap
 
 pip install aiohttp tqdm
 git clone https://github.com/devanshbatham/openredirex
