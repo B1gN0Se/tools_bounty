@@ -93,4 +93,3 @@ sudo chmod +x setup.sh
 git clone https://github.com/swisskyrepo/SSRFmap
 cd SSRFmap/
 pip3 install -r requirements.txt
-python3 ssrfmap.py
