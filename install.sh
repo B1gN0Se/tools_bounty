@@ -77,6 +77,8 @@ mv /root/go/bin/toxicache /usr/bin/
 git clone https://github.com/devanshbatham/paramspider
 cd paramspider
 pip install .
+cd ..
+rm -r paramspider
 
 go install github.com/KathanP19/Gxss@latest
 mv /root/go/bin/Gxss /usr/bin/
