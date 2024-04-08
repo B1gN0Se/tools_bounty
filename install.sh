@@ -99,3 +99,13 @@ sudo chmod +x setup.sh
 ./setup.sh
 cd ..
 rm -r openredirex
+
+git clone https://github.com/vladko312/SSTImap.git
+cd SSTImap
+pip3 install -r requirements.txt
+pip3 install mechanize
+cd ..
+mv SSTImap/ ~
+
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+mv sqlmap-dev/ ~
