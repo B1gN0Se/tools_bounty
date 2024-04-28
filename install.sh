@@ -126,3 +126,7 @@ cd ghauri
 python3 -m pip install --upgrade -r requirements.txt
 pip3 install setuptools
 python3 setup.py install
+
+git clone https://github.com/r0075h3ll/Oralyzer.git
+cd Oralyzer
+pip3 install -r requirements.txt
