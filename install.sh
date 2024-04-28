@@ -124,4 +124,5 @@ mv /root/go/bin/httprobe /usr/bin/
 git clone https://github.com/r0oth3x49/ghauri.git
 cd ghauri
 python3 -m pip install --upgrade -r requirements.txt
+pip3 install setuptools
 python3 setup.py install
