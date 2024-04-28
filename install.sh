@@ -111,3 +111,17 @@ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 mv sqlmap-dev/ ~
 
 apt install feroxbuster -y
+
+go install github.com/tomnomnom/qsreplace@latest
+mv /root/go/bin/qsreplace /usr/bin/
+
+go install github.com/ferreiraklet/airixss@latest
+mv /root/go/bin/airixss /usr/bin/
+
+go install github.com/tomnomnom/httprobe@latest
+mv /root/go/bin/httprobe /usr/bin/
+
+git clone https://github.com/r0oth3x49/ghauri.git
+cd ghauri
+python3 -m pip install --upgrade -r requirements.txt
+python3 setup.py install
