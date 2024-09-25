@@ -62,7 +62,7 @@ nuclei
 go install github.com/Emoe/kxss@latest
 mv /root/go/bin/kxss /usr/bin/
 
-go install -v github.com/LukaSikic/subzy@latest
+go install -v github.com/PentestPad/subzy@latest
 mv /root/go/bin/subzy /usr/bin/
 
 pipx install git+https://github.com/xnl-h4ck3r/knoxnl.git --force
