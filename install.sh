@@ -139,7 +139,3 @@ mv /root/go/bin/interactsh-client /usr/bin/
 
 git clone https://github.com/B1gN0Se/priv_templates.git
 mv priv_templates/ ~
-
-git clone https://github.com/b1gn0se/bug-scanner
-cd bug-scanner
-pip3 install -r requirements.txt && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && dpkg -i google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
