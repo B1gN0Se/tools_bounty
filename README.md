@@ -2,7 +2,7 @@
 
 Tested on **Kali Linux (Cloud)**
 
-A basic shell script that installs the tools I use most during my tests.
+A basic shell script that installs the tools I use most during my tests. Run as **ROOT**
 
 **Steps:**  
 
