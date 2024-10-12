@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir virtualenv_projects
+
 apt update
 
 apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv -y
