@@ -77,7 +77,7 @@ mv /root/go/bin/toxicache /usr/bin/
 git clone https://github.com/devanshbatham/paramspider
 cd virtualenv_projects
 virtualenv paramspider_setup
-source /paramspider_setup/bin/activate
+source paramspider_setup/bin/activate
 cd ..
 cd paramspider
 pip install .
@@ -94,7 +94,7 @@ mv /root/go/bin/shortscan /usr/bin/
 git clone https://github.com/swisskyrepo/SSRFmap
 cd virtualenv_projects
 virtualenv ssrfmap_setup
-source /ssrfmap_setup/bin/activate
+source ssrfmap_setup/bin/activate
 cd ..
 cd SSRFmap
 pip3 install -r requirements.txt
@@ -104,7 +104,7 @@ deactivate
 
 cd virtualenv_projects
 virtualenv openredirex_setup
-source /openredirex_setup/bin/activate
+source openredirex_setup/bin/activate
 cd ..
 pip install aiohttp tqdm
 git clone https://github.com/devanshbatham/openredirex
@@ -118,7 +118,7 @@ deactivate
 git clone https://github.com/vladko312/SSTImap.git
 cd virtualenv_projects
 virtualenv sstimap_setup
-source /sstimap_setup/bin/activate
+source sstimap_setup/bin/activate
 cd ..
 cd SSTImap
 pip3 install -r requirements.txt
@@ -144,7 +144,7 @@ mv /root/go/bin/httprobe /usr/bin/
 git clone https://github.com/r0oth3x49/ghauri.git
 cd virtualenv_projects
 virtualenv ghauri_setup
-source /ghauri_setup/bin/activate
+source ghauri_setup/bin/activate
 cd ..
 cd ghauri
 python3 -m pip install --upgrade -r requirements.txt
@@ -155,7 +155,7 @@ deactivate
 git clone https://github.com/r0075h3ll/Oralyzer.git
 cd virtualenv_projects
 virtualenv oralyzer_setup
-source /oralyzer_setup/bin/activate
+source oralyzer_setup/bin/activate
 cd ..
 cd Oralyzer
 pip3 install -r requirements.txt
