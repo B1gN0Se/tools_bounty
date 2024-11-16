@@ -163,6 +163,7 @@ cd ..
 cd Oralyzer
 pip3 install -r requirements.txt
 deactivate
+cd ..
 
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
 mv /root/go/bin/interactsh-client /usr/bin/
