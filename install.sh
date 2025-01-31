@@ -4,7 +4,7 @@ mkdir virtualenv_projects
 
 apt update
 
-apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool -y
+apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f -y
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 mv /root/go/bin/subfinder /usr/bin/
