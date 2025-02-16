@@ -135,8 +135,6 @@ deactivate
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 mv sqlmap-dev/ ~
 
-apt install feroxbuster -y
-
 go install github.com/tomnomnom/qsreplace@latest
 mv /root/go/bin/qsreplace /usr/bin/
 
