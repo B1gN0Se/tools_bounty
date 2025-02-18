@@ -4,7 +4,7 @@ mkdir virtualenv_projects
 
 apt update
 
-apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists -y
+apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider -y
 
 wget https://raw.githubusercontent.com/B1gN0Se/BIGip-decoder/refs/heads/main/decoder.sh
 chmod +x decoder.sh
@@ -78,17 +78,6 @@ mv /root/go/bin/ffuf /usr/bin/
 
 go install github.com/xhzeem/toxicache@latest
 mv /root/go/bin/toxicache /usr/bin/
-
-git clone https://github.com/devanshbatham/paramspider
-cd virtualenv_projects
-virtualenv paramspider_setup
-source paramspider_setup/bin/activate
-cd ..
-cd paramspider
-pip install .
-cd ..
-rm -r paramspider
-deactivate
 
 go install github.com/KathanP19/Gxss@latest
 mv /root/go/bin/Gxss /usr/bin/
