@@ -4,7 +4,7 @@ mkdir virtualenv_projects
 
 apt update
 
-apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider -y
+apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping -y
 
 wget https://raw.githubusercontent.com/B1gN0Se/BIGip-decoder/refs/heads/main/decoder.sh
 chmod +x decoder.sh
@@ -154,9 +154,6 @@ cd Oralyzer
 pip3 install -r requirements.txt
 deactivate
 cd ..
-
-go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
-mv /root/go/bin/interactsh-client /usr/bin/
 
 git clone https://github.com/B1gN0Se/priv_templates.git
 mv priv_templates/ ~
