@@ -4,6 +4,8 @@ apt update
 
 apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping -y
 
+cd ..
+
 wget https://raw.githubusercontent.com/B1gN0Se/BIGip-decoder/refs/heads/main/decoder.sh
 chmod +x decoder.sh
 
@@ -90,6 +92,7 @@ python3 -m venv ssrfmap_setup
 source ssrfmap_setup/bin/activate
 pip3 install -r requirements.txt
 deactivate
+cd ..
 
 git clone https://github.com/devanshbatham/openredirex
 cd openredirex
@@ -112,7 +115,6 @@ cd ..
 deactivate
 
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-mv sqlmap-dev/ ~
 
 go install github.com/tomnomnom/qsreplace@latest
 mv /root/go/bin/qsreplace /usr/bin/
