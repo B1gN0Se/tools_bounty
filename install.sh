@@ -161,9 +161,4 @@ mv /root/go/bin/interactsh-client /usr/bin/
 git clone https://github.com/B1gN0Se/priv_templates.git
 mv priv_templates/ ~
 
-cd virtualenv_projects
-virtualenv arjun_setup
-source arjun_setup/bin/activate
-cd ..
-pip3 install arjun
-deactivate
+pipx install arjun
