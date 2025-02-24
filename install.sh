@@ -87,7 +87,7 @@ mv /root/go/bin/shortscan /usr/bin/
 
 git clone https://github.com/swisskyrepo/SSRFmap
 cd virtualenv_projects
-virtualenv ssrfmap_setup
+python3 -m venv ssrfmap_setup
 source ssrfmap_setup/bin/activate
 cd ..
 cd SSRFmap
@@ -97,7 +97,7 @@ mv SSRFmap/ ~
 deactivate
 
 cd virtualenv_projects
-virtualenv openredirex_setup
+python3 -m venv openredirex_setup
 source openredirex_setup/bin/activate
 cd ..
 pip install aiohttp tqdm
@@ -111,7 +111,7 @@ deactivate
 
 git clone https://github.com/vladko312/SSTImap.git
 cd virtualenv_projects
-virtualenv sstimap_setup
+python3 -m venv sstimap_setup
 source sstimap_setup/bin/activate
 cd ..
 cd SSTImap
@@ -135,7 +135,7 @@ mv /root/go/bin/httprobe /usr/bin/
 
 git clone https://github.com/r0oth3x49/ghauri.git
 cd virtualenv_projects
-virtualenv ghauri_setup
+python3 -m venv ghauri_setup
 source ghauri_setup/bin/activate
 cd ..
 cd ghauri
@@ -147,7 +147,7 @@ deactivate
 
 git clone https://github.com/r0075h3ll/Oralyzer.git
 cd virtualenv_projects
-virtualenv oralyzer_setup
+python3 -m venv oralyzer_setup
 source oralyzer_setup/bin/activate
 cd ..
 cd Oralyzer
