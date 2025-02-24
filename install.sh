@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir virtualenv_projects
-
 apt update
 
 apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping -y
@@ -55,7 +53,8 @@ cd ..
 go install github.com/hakluke/hakrawler@latest
 mv /root/go/bin/hakrawler /usr/bin/
 
-pip3 install uro
+pipx install uro
+pipx ensurepath
 
 go install github.com/hahwul/dalfox/v2@latest
 mv /root/go/bin/dalfox /usr/bin/
@@ -86,23 +85,17 @@ go install github.com/bitquark/shortscan/cmd/shortscan@latest
 mv /root/go/bin/shortscan /usr/bin/
 
 git clone https://github.com/swisskyrepo/SSRFmap
-cd virtualenv_projects
+cd SSRFmap
 python3 -m venv ssrfmap_setup
 source ssrfmap_setup/bin/activate
-cd ..
-cd SSRFmap
 pip3 install -r requirements.txt
-cd ..
-mv SSRFmap/ ~
 deactivate
 
-cd virtualenv_projects
-python3 -m venv openredirex_setup
-source openredirex_setup/bin/activate
-cd ..
-pip install aiohttp tqdm
 git clone https://github.com/devanshbatham/openredirex
 cd openredirex
+python3 -m venv openredirex_setup
+source openredirex_setup/bin/activate
+pip install aiohttp tqdm
 sudo chmod +x setup.sh
 ./setup.sh
 cd ..
@@ -110,15 +103,12 @@ rm -r openredirex
 deactivate
 
 git clone https://github.com/vladko312/SSTImap.git
-cd virtualenv_projects
+cd SSTImap
 python3 -m venv sstimap_setup
 source sstimap_setup/bin/activate
-cd ..
-cd SSTImap
 pip3 install -r requirements.txt
 pip3 install mechanize
 cd ..
-mv SSTImap/ ~
 deactivate
 
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
@@ -134,11 +124,9 @@ go install github.com/tomnomnom/httprobe@latest
 mv /root/go/bin/httprobe /usr/bin/
 
 git clone https://github.com/r0oth3x49/ghauri.git
-cd virtualenv_projects
+cd ghauri
 python3 -m venv ghauri_setup
 source ghauri_setup/bin/activate
-cd ..
-cd ghauri
 python3 -m pip install --upgrade -r requirements.txt
 pip3 install setuptools
 python3 setup.py install
@@ -146,11 +134,9 @@ cd ..
 deactivate
 
 git clone https://github.com/r0075h3ll/Oralyzer.git
-cd virtualenv_projects
+cd Oralyzer
 python3 -m venv oralyzer_setup
 source oralyzer_setup/bin/activate
-cd ..
-cd Oralyzer
 pip3 install -r requirements.txt
 deactivate
 cd ..
