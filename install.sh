@@ -2,7 +2,7 @@
 
 apt update
 
-apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping awscli -y
+apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping awscli php ruby rbenv -y
 
 cd ..
 
@@ -147,3 +147,11 @@ git clone https://github.com/B1gN0Se/priv_templates.git
 mv priv_templates/ ~
 
 pipx install arjun
+
+echo "Enter below commands in bash/zsh and restart the terminal"
+echo ""
+echo "export PATH="\$HOME/.rbenv/bin:\$PATH""
+echo ""
+echo "eval "\$\(rbenv init - bash\)" # or zsh"
+echo ""
+echo "source .bashrc # or zsh"
