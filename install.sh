@@ -125,15 +125,8 @@ mv /root/go/bin/airixss /usr/bin/
 go install github.com/tomnomnom/httprobe@latest
 mv /root/go/bin/httprobe /usr/bin/
 
-git clone https://github.com/r0oth3x49/ghauri.git
-cd ghauri
-python3 -m venv ghauri_setup
-source ghauri_setup/bin/activate
-python3 -m pip install --upgrade -r requirements.txt
-pip3 install setuptools
-python3 setup.py install
-cd ..
-deactivate
+pipx install git+https://github.com/r0oth3x49/ghauri.git 
+pipx ensurepath
 
 git clone https://github.com/r0075h3ll/Oralyzer.git
 cd Oralyzer
@@ -147,6 +140,7 @@ git clone https://github.com/B1gN0Se/priv_templates.git
 mv priv_templates/ ~
 
 pipx install arjun
+pipx ensurepath
 
 echo "Enter below commands in bash/zsh and restart the terminal"
 echo ""
