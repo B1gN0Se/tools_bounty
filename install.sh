@@ -6,6 +6,8 @@ apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq
 
 cd ..
 
+pipx ensurepath
+
 wget https://raw.githubusercontent.com/B1gN0Se/BIGip-decoder/refs/heads/main/decoder.sh
 chmod +x decoder.sh
 
@@ -56,7 +58,6 @@ go install github.com/hakluke/hakrawler@latest
 mv /root/go/bin/hakrawler /usr/bin/
 
 pipx install uro
-pipx ensurepath
 
 go install github.com/hahwul/dalfox/v2@latest
 mv /root/go/bin/dalfox /usr/bin/
@@ -72,7 +73,6 @@ go install -v github.com/PentestPad/subzy@latest
 mv /root/go/bin/subzy /usr/bin/
 
 pipx install git+https://github.com/xnl-h4ck3r/knoxnl.git --force
-pipx ensurepath
 
 go install github.com/ffuf/ffuf/v2@latest
 mv /root/go/bin/ffuf /usr/bin/
@@ -126,7 +126,6 @@ go install github.com/tomnomnom/httprobe@latest
 mv /root/go/bin/httprobe /usr/bin/
 
 pipx install git+https://github.com/r0oth3x49/ghauri.git 
-pipx ensurepath
 
 git clone https://github.com/r0075h3ll/Oralyzer.git
 cd Oralyzer
@@ -140,7 +139,6 @@ git clone https://github.com/B1gN0Se/priv_templates.git
 mv priv_templates/ ~
 
 pipx install arjun
-pipx ensurepath
 
 echo "Enter below commands in bash/zsh and restart the terminal"
 echo ""
