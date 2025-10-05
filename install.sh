@@ -2,7 +2,7 @@
 
 apt update
 
-apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping awscli phpggc ruby rbenv -y
+apt install golang-go make curl zip wget python3-pip net-tools pipx sublist3r jq nano python3-virtualenv git hashcat exiftool wafw00f telnet netcat-traditional whois john wordlists seclists paramspider host iputils-ping awscli phpggc ruby rbenv sqlmap -y
 
 cd ..
 
@@ -72,8 +72,6 @@ mv /root/go/bin/kxss /usr/bin/
 go install -v github.com/PentestPad/subzy@latest
 mv /root/go/bin/subzy /usr/bin/
 
-pipx install git+https://github.com/xnl-h4ck3r/knoxnl.git --force
-
 go install github.com/ffuf/ffuf/v2@latest
 mv /root/go/bin/ffuf /usr/bin/
 
@@ -114,8 +112,6 @@ pip3 install mechanize
 cd ..
 deactivate
 
-git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-
 go install github.com/tomnomnom/qsreplace@latest
 mv /root/go/bin/qsreplace /usr/bin/
 
@@ -136,14 +132,9 @@ deactivate
 cd ..
 
 git clone https://github.com/B1gN0Se/priv_templates.git
-mv priv_templates/ ~
 
 pipx install arjun
 
-echo "Enter below commands in bash/zsh and restart the terminal"
-echo ""
-echo "export PATH="\$HOME/.rbenv/bin:\$PATH""
-echo ""
-echo "eval "\$\(rbenv init - bash\)" # or zsh"
-echo ""
-echo "source .bashrc # or .zshrc"
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
+source ~/.bashrc
