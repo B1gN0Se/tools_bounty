@@ -133,6 +133,9 @@ cd ..
 
 git clone https://github.com/B1gN0Se/priv_templates.git
 
+CGO_ENABLED=1 go install github.com/projectdiscovery/katana/cmd/katana@latest
+mv /root/go/bin/katana /usr/bin/
+
 pipx install arjun
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
